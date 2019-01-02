@@ -1,0 +1,315 @@
+<!doctype html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,700'	rel='stylesheet' type='text/css' />
+    <link href="css/irfan.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+</head>
+
+
+<body style="">
+
+    <style scoped type="text/css">
+        body {
+            /*
+            background:#0C6;
+            background: -webkit-linear-gradient(#000, #740101); 
+            background: -o-linear-gradient(#000, #740101); 
+            background: -moz-linear-gradient(#000, #740101); 
+            background: linear-gradient(#000, #740101);  				
+            */			
+            color:#000;
+        }
+    </style>
+
+
+    <!-- NAVIGATION -->        
+    <header style="background-color:#000; margin-bottom:1em;">
+        <div  style="padding:0;" class="container" id="container-for-mob">
+
+            <!-- Top Header -->
+            <div class="header-top">                    
+                <div class="row" style="padding:0; margin:0;">
+                    <style scoped type="text/css">
+                        li a {color:#E27900; }
+                    </style>
+                    <div class="col-sm-4 col-xs-6" id="header-left">
+                        <ul class="nav">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-sm-push-4 col-xs-6" id="header-right">
+                        <ul class="nav">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </div>							
+                    <!-- Logo -->
+                    <div id="logo" class="col-sm-4 logo col-sm-pull-4">								
+                        <a href="index.html"><img alt="Fresc " src="./img/logo-medium.png"></a>  
+                    </div>							
+                </div>
+            </div>
+
+            <nav class="navbar navbar-default" role="navigation"> 		                    	
+                <div>
+                    <div class="navbar-header">
+                        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"> -->                                
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">	
+                            <span class="sr-only">Toggle navigation</span> 
+                            <span class="icon-bar"></span> 
+                            <span class="icon-bar"></span>  
+                            <span class="icon-bar"></span>
+                        </button>								
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse"> <!--  [collapse] will hide your block by default -->
+                        <ul class="nav navbar-nav" style="padding-right: 118px;"> <!-- hide this on mibile -->
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="coffees.html">Coffees</a></li>
+                            <li><a href="confectionary.html">Confectionary</a></li>									
+                        </ul> 
+                        <ul class="nav navbar-nav" style="padding-right: 0px; padding-left: 118px;"> <!-- hide this on mibile -->
+                            <li><a href="index.html">Groceries</a></li>
+                            <li><a href="about.html">Fruit&Veg</a></li>
+                            <li><a href="about.html">About</a></li>                                    									
+                        </ul> 
+
+                        <!-- navigation for mobile screen. This is hidden to desktop. We display this with media query for mobiles. Initially, this <ul> is hidden 
+                        on mobile phones because of the [collapse] class which wraps this DIV.  -->                                
+                        <div id="mobile-nav" style=" background-color:#e27900; text-align:center;">
+                            <div style=" padding:10px;"><a style="color:#fff;" href="about.html">About Mobile</a></div>
+                            <div style=" padding:10px;"><a style="color:#fff;" href="about.html">About Mobile</a></div>
+                            <div style=" padding:10px;"><a style="color:#fff;" href="about.html">About Mobile</a></div>                                                                        
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="container text-center" style="padding:3em 2em;">
+        <div class="row">
+            <div class="col-lg-4">
+                <span class="glyphicon glyphicon-plane"></span>
+                <span>FREE DELIVERY IN UK</span>
+            </div>
+            <div class="col-lg-4">
+                <span class="glyphicon glyphicon-retweet"></span>
+                <span>4 DAYS RETURN POLICY</span>
+            </div>            
+            <div class="col-lg-4">
+                <span class="glyphicon glyphicon-phone-alt"></span>
+                <span>24/7 SUPPORT</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 style="color:#E27900;">Please fill in the form below and to get in touch with us.</h1>
+            </div>
+        </div>
+    </div>   
+
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Our Address</h3>
+                <div>
+                    <div class="media">
+                        <i class="fa fa-home pull-left"></i>
+                        <div>
+                            FRESC LTD.
+                            <br> 74 White Hart Lane
+                            <br />London
+                            <br />N17 8HP
+                            <br />United Kingdom
+                            <br /><strong>Tel: 07914 014 749</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                    <fieldset class="">
+                        <h3>Contact Form</h3>
+                        <div class="content">
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-name">Your Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="name" value="" id="input-name" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-email">E-Mail Address</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="email" value="" id="input-email" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-enquiry">Enquiry</label>
+                                <div class="col-sm-10">
+                                    <textarea name="enquiry" rows="10" id="input-enquiry" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="pull-right">
+                                    <input class="btn btn-warning" type="submit" value="Submit" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer id="footer">
+        <style scoped type="text/css">
+            li a {color: #E27900;}
+        </style>
+        <div class="footer-content">
+            <div class="container">
+                <hr />
+                <div class="row">                    
+                    <div class="col-md-4">
+                        <div class="footer-col-inner">
+                            <h3 class="title">About us</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right"></i>Who we are</a>
+                                </li>                                   
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right"></i>Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right"></i>Contact us</a>
+                                </li>
+                            </ul>
+                        </div><!--//footer-col-inner-->
+                    </div><!--//foooter-col-->
+
+                    <div class="col-md-4">
+                        <div class="footer-col-inner">
+                            <h3 class="title">Product</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right"></i>Fresh Greek - Turkish Groceries</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right"></i>Fresh Turkish Cofee</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right"></i>Wholesale</a>
+                                </li>
+                            </ul>
+                        </div><!--//footer-col-inner-->
+                    </div><!--//foooter-col-->
+
+
+                    <div class="col-md-4">
+                        <div class="footer-col-inner">
+                            <h3 class="title">Support</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right"></i>Help</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right"></i>Terms ofservices</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-caret-right"></i>Privacy</a>
+                                </li>
+                            </ul>
+                        </div><!--//footer-col-inner-->
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div><!--//footer-content-->
+
+
+
+        <div class="container">
+            <hr />
+            <div class="row">
+                <div class="col-lg-12">
+                    <small class="copyright"> Copyright @ 2015 Fresc Ltd.</small>
+                    <span class="pull-right"><small>Site by irfan</small></span>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>    		
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var $fincan = $("#fincan"),
+                    $h1 = $("h1").eq(0), //the first h1 in the document
+                    $fresh = $("h2").eq(0),
+                    $turkish = $("h3").eq(0),
+                    $footer = $("#footer"),
+                    $thirdRow = $("#thirdRow"),
+                    $firstRow = $("#firstRow"),
+                    $secondRow = $("#secondRow"),
+                    tl;
+
+            CSSPlugin.defaultTransformPerspective = 800; //apply the same transformPerspectiveto every element that will be animated in 3D space        
+            //transformOrigin:"center top" GIVES flipping down from the top EFFECT
+
+            tl = new TimelineMax();
+            tl.from($h1, 1, {opacity: 0, x: -200, ease: Back.easeOut})
+            tl.from($firstRow, 1, {yPercent: 50, opacity: 0, ease: Back.easeOut}, "-=0.5")
+                    //tl.from($secondRow, 1, {yPercent:-50, opacity:0, ease:Back.easeOut} )		
+                    //.from($fresh, 1, {opacity:0, x:200, ease:Back.easeOut}, "-=0.25")
+                    //.from($turkish, 1, {opacity:0, x:-200, ease:Back.easeOut}, "-=0.25")
+                    ;
+
+
+        });
+
+
+
+    </script>
+
+
+</body>
+</html>

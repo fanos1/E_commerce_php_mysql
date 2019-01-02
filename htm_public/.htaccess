@@ -1,0 +1,66 @@
+#suPHP_ConfigPath /var/sites/a/alphina.uk/public_html/php.ini
+
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+    RewriteEngine on
+
+    ## Rewrite alphina.uk URLs to www.alphina.uk
+    ####RewriteCond %{HTTP_HOST} ^alphina.uk [NC]
+    ####RewriteRule ^(.*)$ http://www.alphina.uk/$1 [L,R=301]
+
+
+    # For the primary categories:
+    # Rewrite "http://www.alphina.uk/shop/goodies/" AS shop.php?type=goodies
+    ## RewriteRule ^shop/(coffee|goodies)/?$ shop.php?type=$1 
+    ## RewriteRule ^shop/(cardigans|jumpers|tunics)/?$ shop.php?type=$1 
+
+
+    #### test 
+    ##RewriteRule ^(coffees\.php|confectionary\.php|final\.php )$ category.php?id=$1
+    ##WORKDS### RewriteRule ^coffees/([0-9])/?$ category.php?id=$1 
+    RewriteRule ^coffees/([0-9])/?$ category.php?id=$1 
+    RewriteRule ^confectionaries/([0-9])/?$ category.php?id=$1 
+    RewriteRule ^baklava/([0-9])/?$ category.php?id=$1 
+    RewriteRule ^fruit-and-vegetables/([0-9])/?$ category.php?id=$1 
+    RewriteRule ^milk/([0-9])/?$ category.php?id=$1 
+    RewriteRule ^nuts/([0-9])/?$ category.php?id=$1 
+    RewriteRule ^raw-honeys/([0-9])/?$ category.php?id=$1 
+    RewriteRule ^almonds/([0-9])/?$ category.php?id=$1 
+    RewriteRule ^walnuts/([0-9])/?$ category.php?id=$1 
+    RewriteRule ^pistachios/([0-9]+)/$ category.php?id=$1 
+	RewriteRule ^hazelnuts/([0-9]+)/$ category.php?id=$1
+                 
+
+
+    # For sales:
+    RewriteRule ^shop/sales/?$ /sales.php
+
+    # For specific products:
+    ###RewriteRule ^browse/(coffee|goodies)/([A-Za-z\+\-]+)/([0-9]+)/?$ browse.php?type=$1&category=$2&id=$3
+    ###ORIGINAL## RewriteRule ^browse/(coffee|goodies)/([A-Za-z\+\-]+)/([0-9]+)/?$ browse.php?type=$1&category=$2&id=$3
+    ###RewriteRule ^category/(cardigans|jumpers|tunics)/([A-Za-z\+\-]+)/([0-9]+)/?$ category.php?type=$1&category=$2&id=$3
+    RewriteRule ^category/([A-Za-z\+\-]+)/([0-9]+)/?$ category.php?type=$1&category=$1&id=$2
+
+
+    #----------- For Specific HTTPS pages: ---------------
+    ####RewriteCond %{HTTPS} off    
+    ####RewriteRule ^(checkout\.php|billing_stripe\.php|final\.php|admin/(.*))$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+    
+    ## ----------- For all pages to HTTPS pages. From Siteground.com -----------
+    RewriteCond %{SERVER_PORT} 80
+    RewriteRule ^(.*)$ https://www.alphina.uk/$1 [R=301,L]
+
+</IfModule>
+
+
+#custom Error page
+ErrorDocument 404 https://www.alphina.uk/custom-404.php
+
+##------------- 
+## TO PREVENT clickjacking ATTACK ON SHARED HOSTING, ADD FOLLOWING LINE  
+## https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+## 
+## Header append X-FRAME-OPTIONS "SAMEORIGIN"		DIDNT WORK
+Header set X-Frame-Options DENY
+AddType x-httpd-php7 .php

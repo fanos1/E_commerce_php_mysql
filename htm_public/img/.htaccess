@@ -1,0 +1,5 @@
+# Disable PHP scripts from execution in this Dir. in case if somehow a Malicious user uploads a PHP script to this folder. This will prevent it from execution
+RemoveType .php
+
+# Also change its permissions to 444 as nobody needs to write to it. 
+# NOTE ORIGINAL permissions was: 755

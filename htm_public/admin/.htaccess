@@ -1,0 +1,5 @@
+
+AuthName "You must log in to see this folder content"
+AuthType Basic
+require valid-user
+AuthUserFile "/home/fresc512/.htpasswds/public_html/dobaln.co.uk/adminarhigos/passwd"
