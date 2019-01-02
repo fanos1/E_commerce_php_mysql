@@ -10,5 +10,5 @@
 __URL are made pretty using .htaccess file
 Please change and amend the .htaccess file to reflect your own Top-Level Navigation Items.
 
-## http://github.com - automatic!
+## www.alphina.uk - Alphina!
 [Project Demo Website Here](www.alphina.uk)
