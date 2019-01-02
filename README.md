@@ -10,4 +10,4 @@
 __URL are made pretty using .htaccess file
 Please change and amend the .htaccess file to reflect your own Top-Level Navigation Items.
 
-www.alphina.uk - Project Demo!
+## www.alphina.uk - Project Demo!
